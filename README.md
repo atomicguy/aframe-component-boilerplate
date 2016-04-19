@@ -6,9 +6,17 @@ An Fence component for [A-Frame](https://aframe.io) VR.
 
 | Property | Description | Default Value |
 | -------- | ----------- | ------------- |
-|          |             |               |
+|   width  | fence width |        10     |
+|   depth  | fence depth |        10     |
+|   x0     | starting corner, x | 0      |
+|   z0     | starting corner, z | 0      |
 
 ### Usage
+
+The fence-component sets bounds for the camera, which fences the camera in a restricted area.
+
+Setting the `width` and `depth` values establishes the size of the fenced area.
+Setting `x0` and `z0` establishes the starting (x,z) corner of the fenced area.
 
 #### Browser Installation
 
@@ -23,7 +31,7 @@ Install and use by directly including the [browser files](dist):
 
 <body>
   <a-scene>
-    <a-entity fence="exampleProp: exampleVal"></a-entity>
+    <a-entity fence="width: 10; depth: 10; x0: -1; z0: 2"></a-entity>
   </a-scene>
 </body>
 ```
