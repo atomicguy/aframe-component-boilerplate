@@ -1,6 +1,6 @@
 ## aframe-fence-component
 
-An Fence component for [A-Frame](https://aframe.io) VR.
+A Camera Fence component for [A-Frame](https://aframe.io) VR.
 
 ### Properties
 
@@ -36,7 +36,7 @@ Install and use by directly including the [browser files](dist):
 </body>
 ```
 
-#### NPM Installation
+<!-- #### NPM Installation
 
 Install via NPM:
 
@@ -49,4 +49,4 @@ Then register and use.
 ```js
 require('aframe');
 require('aframe-fence-component');
-```
+``` -->

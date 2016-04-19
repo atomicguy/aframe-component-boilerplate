@@ -4,6 +4,11 @@ if (typeof AFRAME === 'undefined') {
 
 /**
  * Fence component for A-Frame.
+ *
+ * Thanks to Don McCurdy <https://github.com/donmccurdy>
+ * for his initial code
+ * and ngokevin's Component Boilerplate <https://github.com/ngokevin/aframe-component-boilerplate>
+ *
  */
 AFRAME.registerComponent('fence', {
   schema: {
