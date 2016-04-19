@@ -1,11 +1,45 @@
+
 <html>
   <head>
+    <title>A-Frame Fence Component - Basic</title>
     <script src="../build.js"></script>
   </head>
   <body>
-    <a-assets></a-assets>
     <a-scene>
-      <a-entity geometry="primitive: box" material="color: #C03546"></a-entity>
+      <a-assets></a-assets>
+      <a-camera fence="width: 10; depth: 10; x0: -4; z0: 2"></a-camera>
+
+      <a-entity id="boundaryfence" position="-4 0 2">
+          <a-entity id="North" position="0 -1 -5" rotation="0 0 0">
+              <a-box height="0.5" width="10" depth="0.01" color="#59617D"></a-box>
+          </a-entity>
+          <a-entity id="South" position="0 -1 5" rotation="0 0 0">
+              <a-box height="0.5" width="10" depth="0.01" color="#874F70"></a-box>
+          </a-entity>
+          <a-entity id="East" position="5 -1 0" rotation="0 -90 0">
+              <a-box height="0.5" width="10" depth="0.01" color="#AB4F59"></a-box>
+          </a-entity>
+          <a-entity id="West" position="-5 -1 0" rotation="0 -90 0">
+              <a-box height="0.5" width="10" depth="0.01" color="#F28033"></a-box>
+          </a-entity>
+      </a-entity>
+
+      <a-entity id="far walls" rotation="0 90 0">
+          <a-entity id="FarNorth" position="0 0 -10" rotation="0 0 0">
+              <a-box height="3" width="20" depth="0.2" color="#59617D"></a-box>
+          </a-entity>
+          <a-entity id="FarSouth" position="0 0 10" rotation="0 0 0">
+              <a-box height="3" width="20" depth="0.2" color="#874F70"></a-box>
+          </a-entity>
+          <a-entity id="FarEast" position="10 0 0" rotation="0 90 0">
+              <a-box height="3" width="20" depth="0.2" color="#AB4F59"></a-box>
+          </a-entity>
+          <a-entity id="FarWest" position="-10 0 0" rotation="0 90 0">
+              <a-box height="3" width="20" depth="0.2" color="#F28033"></a-box>
+          </a-entity>
+      </a-entity>
+
+
     </a-scene>
   </body>
 </html>
