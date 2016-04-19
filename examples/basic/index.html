@@ -7,9 +7,9 @@
   <body>
     <a-scene>
       <a-assets></a-assets>
-      <a-camera fence="width: 10, depth: 10"></a-camera>
+      <a-camera fence="width: 10; depth: 10; x0: -4; z0: 2"></a-camera>
 
-      <a-entity id="boundaryfence">
+      <a-entity id="boundaryfence" position="-4 0 2">
           <a-entity id="North" position="0 -1 -5" rotation="0 0 0">
               <a-box height="0.5" width="10" depth="0.01" color="#59617D"></a-box>
           </a-entity>
