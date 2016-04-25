@@ -34,10 +34,8 @@ Install and use by directly including the [browser files](dist):
     <a-entity fence="width: 10; depth: 10; x0: -1; z0: 2"></a-entity>
   </a-scene>
 </body>
+
 ```
-
-<!-- #### NPM Installation
-
 Install via NPM:
 
 ```bash
@@ -49,4 +47,4 @@ Then register and use.
 ```js
 require('aframe');
 require('aframe-fence-component');
-``` -->
+```
