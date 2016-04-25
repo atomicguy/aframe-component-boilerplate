@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
   <head>
     <title>A-Frame Fence Component - Basic</title>
@@ -7,46 +7,49 @@
   <body>
     <a-scene>
       <a-assets></a-assets>
-      <a-camera fence="width: 10; depth: 10; x0: -4; z0: 2"></a-camera>
+      <a-camera fence="width: 9.5; depth: 9.5; x0: -4; z0: 2"></a-camera>
 
       <a-entity id="boundaryfence" position="-4 0 2">
           <a-entity id="North" position="0 -1 -5" rotation="0 0 0">
               <a-box height="0.1" width="10" depth="0.1" position="0 -1.25 0" color="#59617D"></a-box>
-              <a-box height="2.5" width="10" depth="0.01" material="color=: #59617D; transparent: true; opacity: 0.33"></a-box>
+              <a-box height="2.5" width="10" depth="0.01" material="color: #59617D; transparent: true; opacity: 0.33"></a-box>
               <a-box height="0.1" width="10" depth="0.1" position="0 1.25 0" color="#59617D"></a-box>
           </a-entity>
           <a-entity id="South" position="0 -1 5" rotation="0 0 0">
                <a-box height="0.1" width="10" depth="0.1" position="0 -1.25 0" color="#874F70"></a-box>
-              <a-box height="2.5" width="10" depth="0.01" material="color=: #874F70; transparent: true; opacity: 0.33"></a-box>
+              <a-box height="2.5" width="10" depth="0.01" material="color: #874F70; transparent: true; opacity: 0.33"></a-box>
               <a-box height="0.1" width="10" depth="0.1" position="0 1.25 0" color="#874F70"></a-box>
           </a-entity>
           <a-entity id="East" position="5 -1 0" rotation="0 -90 0">
               <a-box height="0.1" width="10" depth="0.1" position="0 -1.25 0" color="#AB4F59"></a-box>
-              <a-box height="2.5" width="10" depth="0.01" material="color=: #AB4F59; transparent: true; opacity: 0.33"></a-box>
+              <a-box height="2.5" width="10" depth="0.01" material="color: #AB4F59; transparent: true; opacity: 0.33"></a-box>
               <a-box height="0.1" width="10" depth="0.1" position="0 1.25 0" color="#AB4F59"></a-box>
           </a-entity>
           <a-entity id="West" position="-5 -1 0" rotation="0 -90 0">
               <a-box height="0.1" width="10" depth="0.1" position="0 -1.25 0" color="#F28033"></a-box>
-              <a-box height="2.5" width="10" depth="0.01" material="color=: #F28033; transparent: true; opacity: 0.33"></a-box>
+              <a-box height="2.5" width="10" depth="0.01" material="color: #F28033; transparent: true; opacity: 0.33"></a-box>
               <a-box height="0.1" width="10" depth="0.1" position="0 1.25 0" color="#F28033"></a-box>
           </a-entity>
       </a-entity>
 
       <a-entity id="far walls" rotation="0 90 0">
-          <a-entity id="FarNorth" position="0 0 -10" rotation="0 0 0">
-              <a-box height="3" width="20" depth="0.2" color="#59617D"></a-box>
+          <a-entity id="FarNorth" position="0 -.25 -10" rotation="0 0 0">
+              <a-box height="5" width="20" depth="0.2" color="#525A74"></a-box>
           </a-entity>
-          <a-entity id="FarSouth" position="0 0 10" rotation="0 0 0">
-              <a-box height="3" width="20" depth="0.2" color="#874F70"></a-box>
+          <a-entity id="FarSouth" position="0 -.25 10" rotation="0 0 0">
+              <a-box height="5" width="20" depth="0.2" color="#73435F"></a-box>
           </a-entity>
-          <a-entity id="FarEast" position="10 0 0" rotation="0 90 0">
-              <a-box height="3" width="20" depth="0.2" color="#AB4F59"></a-box>
+          <a-entity id="FarEast" position="10 -.25 0" rotation="0 90 0">
+              <a-box height="5" width="20" depth="0.2" color="#9C4750"></a-box>
           </a-entity>
-          <a-entity id="FarWest" position="-10 0 0" rotation="0 90 0">
-              <a-box height="3" width="20" depth="0.2" color="#F28033"></a-box>
+          <a-entity id="FarWest" position="-10 -.25 0" rotation="0 90 0">
+              <a-box height="5" width="20" depth="0.2" color="#D6712D"></a-box>
           </a-entity>
       </a-entity>
 
+      <a-plane id="floor" width="21" height="21" rotation="-90 0 0" position="0 -2.25 0" color="#33211C"></a-plane>
+
+      <a-sky color="#F1F1F1"></a-sky>
 
     </a-scene>
   </body>
