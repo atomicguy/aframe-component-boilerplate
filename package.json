@@ -2,7 +2,6 @@
   "name": "aframe-fence-component",
   "version": "0.1.5",
   "description": "Fence component for A-Frame VR.",
-
   "main": "index.js",
   "scripts": {
     "build": "browserify examples/main.js -o examples/build.js",
@@ -32,7 +31,7 @@
   },
   "homepage": "https://github.com/atomicguy/aframe-fence-component#readme",
   "devDependencies": {
-    "aframe": "^0.3.0",
+    "aframe": "^0.7.0",
     "browserify": "^12.0.1",
     "browserify-css": "^0.8.3",
     "budo": "^7.1.0",
