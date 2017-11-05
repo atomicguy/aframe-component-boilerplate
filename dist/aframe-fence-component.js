@@ -42,7 +42,7 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	if (typeof AFRAME === 'undefined') {
 	  throw new Error('Component attempted to register before AFRAME was available.');
@@ -90,7 +90,7 @@
 	      minZ = thisdepth / 2 + z0;
 	      maxZ = ( -1 * thisdepth / 2 ) + z0;
 
-	      var position = this.el.getComputedAttribute('position');
+	      var position = this.el.getAttribute('position');
 
 	      position.x = Math.min( minX, position.x);
 	      position.x = Math.max( maxX, position.x);
@@ -104,5 +104,5 @@
 	});
 
 
-/***/ }
+/***/ })
 /******/ ]);
